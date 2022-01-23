@@ -27,9 +27,6 @@
 
 <style>
 	main {
-		height: 100%;
-		width: 40%;
-		margin: 4rem auto;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
