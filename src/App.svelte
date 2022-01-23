@@ -27,6 +27,7 @@
 
 <style>
 	main {
+		padding: 1rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -37,9 +38,17 @@
 		width: 16rem;
 	}
 
+	@media only screen and (max-height: 800px) {
+		#avatar {
+			height: 12rem;
+			width: 12rem;
+		}
+	}
+
 	h1 {
 		font-size: 2rem;
         letter-spacing: 8px;
 		font-family: 'Analogue';
+		text-align: center;
     }
 </style>

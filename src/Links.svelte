@@ -44,7 +44,6 @@
         text-decoration: inherit;
         color: inherit;
         
-        height: 2rem;
         padding: 1rem;
         margin-top: 1rem;
         text-align: center;
