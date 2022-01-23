@@ -4,9 +4,9 @@
 	import Logo from "./Logo.svelte";
 
 	const links: Link[] = [
-		{ text: "visit my website", href: "https://kristenbrookedesign.com" },
-		{ text: "request a stationary quote", href: "https://docs.google.com/forms/d/e/1FAIpQLSeVh_o0DaSIS1zI5jwbbuu-EFoq7UbOvZ65qsbDcoiHfl8YcA/viewform"},
-		{ text: "instagram", href: "https://www.instagram.com/kristenandcreative" },
+		{ text: "visit my website", href: "https://kristenbrookedesign.com", newTab: true },
+		{ text: "request a stationary quote", href: "https://docs.google.com/forms/d/e/1FAIpQLSeVh_o0DaSIS1zI5jwbbuu-EFoq7UbOvZ65qsbDcoiHfl8YcA/viewform", newTab: true },
+		{ text: "instagram", href: "https://www.instagram.com/kristenandcreative", newTab: true },
 		{ text: "email me", href: "mailto:kristen@kristenbrookedesign.com" },
 	]
 </script>

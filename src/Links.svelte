@@ -2,6 +2,7 @@
     export interface Link {
         href: string;
         text: string;
+        newTab?: boolean;
     }
 </script>
 
@@ -13,7 +14,7 @@
 
 <ul>
     {#each links as link}
-    <a class="draw-border" href={link.href}>
+    <a class="draw-border" href={link.href} target={link.newTab ? "_blank" : ""}>
         <li>{link.text}</li>
     </a>
     {/each}
