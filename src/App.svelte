@@ -1,30 +1,48 @@
 <script lang="ts">
-	export let name: string;
+	import Links from "./Links.svelte";
+	import type { Link } from "./Links.svelte";
+	import Logo from "./Logo.svelte";
+
+	const links: Link[] = [
+		{ text: "visit my website", href: "https://kristenbrookedesign.com" },
+		{ text: "request a stationary quote", href: "https://docs.google.com/forms/d/e/1FAIpQLSeVh_o0DaSIS1zI5jwbbuu-EFoq7UbOvZ65qsbDcoiHfl8YcA/viewform"},
+		{ text: "instagram", href: "https://www.instagram.com/kristenandcreative" },
+		{ text: "email me", href: "mailto:kristen@kristenbrookedesign.com" },
+	]
 </script>
 
+
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<img id="avatar" src="/assets/avatar.png" alt="Avatar" />
+
+	<h1>HELLO THERE!</h1>
+
+	<div class="links">
+		<Links links={links} />
+	</div>
+
+	<Logo />
 </main>
+
 
 <style>
 	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
+		height: 100%;
+		width: 40%;
+		margin: 4rem auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#avatar {
+		height: 16rem;
+		width: 16rem;
 	}
 
 	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
+		font-size: 2rem;
+        letter-spacing: 8px;
+		font-family: 'Analogue';
+    }
 </style>
