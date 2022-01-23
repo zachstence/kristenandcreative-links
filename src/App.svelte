@@ -13,7 +13,7 @@
 
 
 <main>
-	<img id="avatar" src="/assets/avatar.png" alt="Avatar" />
+	<img id="avatar" src="/assets/avatar.png" alt="Avatar" draggable="false" />
 
 	<h1>HELLO THERE!</h1>
 

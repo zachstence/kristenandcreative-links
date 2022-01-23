@@ -23,6 +23,13 @@ body {
 	background-color: #efe4dc;
 }
 
+* {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
 @media only screen and (max-height: 800px) {
 	body {
 		display: block;
