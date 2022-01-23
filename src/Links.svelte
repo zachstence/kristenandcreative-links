@@ -45,7 +45,7 @@
         text-decoration: inherit;
         color: inherit;
         
-        padding: 1rem;
+        padding: 1rem 1.5rem;
         margin-top: 1rem;
         text-align: center;
     }
